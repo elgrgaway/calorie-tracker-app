@@ -1,0 +1,72 @@
+.title {
+  color: var(--theme-color-dark);
+  font-weight: 300;
+  font-size: 42px;
+  width: 100%;
+  text-align: center;
+}
+.controls {
+  margin-bottom: 20px;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.add-btn {
+  background-color: var(--theme-color-normal);
+  color: var(--theme-background-light);
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  flex-grow: 1;
+  max-width: 110px;
+  min-width: 110px;
+}
+.listing-picker-label {
+  color: var(--theme-color-dark);
+  line-height: 40px;
+  font-weight: 500;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.listing-picker-input {
+  margin: 0;
+  background-color: var(--theme-background-light);
+  color: var(--theme-color-normal);
+  border: 1px solid var(--theme-color-normal);
+  padding: 10px;
+  border-radius: 5px;
+  /* width: 150px; */
+  /* max-width: 225px; */
+  max-width: 140px;
+  min-width: 70px;
+  font-size: 16px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .title {
+    font-size: 30px;
+  }
+  .listing-picker-label {
+    font-size: 13px;
+  }
+  .listing-picker-input {
+    padding: 5px;
+    font-size: 13[x];
+  }
+  .add-btn {
+    font-size: 13px;
+    padding: 8px 5px;
+  }
+}

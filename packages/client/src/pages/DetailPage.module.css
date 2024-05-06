@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+  margin: auto;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  color: var(--theme-color-normal);
+  border-bottom: 1px solid var(--theme-color-dark);
+}
+
+.item:last-child {
+  margin-bottom: 20px;
+}
